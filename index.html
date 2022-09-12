@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Supabaseのライブラリ(モジュール/パッケージ)を読み込む -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            width: 100%;
+            background-color: white;
+        }
+
+        p {
+            font-family: 'Noto Sans JP', sans-serif;
+            /* margin-right: auto; */
+            /* margin-left: auto; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="msg"> </p>
+    </div>
+    <!-- 自分で作ったライブラリ(main.js)を読み込む -->
+    <script src="main.js"></script>
+</body>
+
+</html>
