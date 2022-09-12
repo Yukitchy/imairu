@@ -7,12 +7,17 @@ const main = async () => {
     let { data: imairu, error } = await client
         .from('imairu')
         .select('*')
-        // .order('created_at', { ascending: false })
+        .order('created_at', { ascending: false })
         .limit(1)
     console.log(imairu);
     const place = imairu[0]
     const msg = `${place.message}`
-    document.querySelector("#msg").innerText = msg
+    if (place.message === "今帰りました") {
+        console.log("taska")
+    } else {
+        console.log("taskb")
+    }
+    // document.querySelector("#msg").innerText = msg
 
 }
 
