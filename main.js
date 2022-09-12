@@ -11,7 +11,6 @@ const main = async () => {
         .limit(1)
     console.log(imairu);
     const place = imairu[0]
-    const msg = `${place.message}`
     if (place.message === "現在家守滞在中です") {
         console.log("https://yukitchy.github.io/imairu/yes.png")
         let a = document.querySelector("#img")
