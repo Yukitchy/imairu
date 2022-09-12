@@ -16,9 +16,9 @@ const main = async () => {
         let a = document.querySelector("#img")
         a.src = "https://yukitchy.github.io/imairu/yes.png"
     } else {
-        console.log("https://yukitchy.github.io/imairu/no.jpeg")
+        console.log("https://yukitchy.github.io/imairu/no.png")
         let a = document.querySelector("#img")
-        a.src = "https://yukitchy.github.io/imairu/no.jpeg"
+        a.src = "https://yukitchy.github.io/imairu/no.png"
     }
 
 
