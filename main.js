@@ -12,12 +12,16 @@ const main = async () => {
     console.log(imairu);
     const place = imairu[0]
     const msg = `${place.message}`
-    if (place.message === "今帰りました") {
-        console.log("taska")
+    if (place.message === "現在家守滞在中です") {
+        console.log("https://yukitchy.github.io/imairu/yes.png")
+        let a = document.querySelector("#img")
+        a.src = "https://yukitchy.github.io/imairu/yes.png"
     } else {
-        console.log("taskb")
+        console.log("https://yukitchy.github.io/imairu/no.jpeg")
+        let a = document.querySelector("#img")
+        a.src = "https://yukitchy.github.io/imairu/no.jpeg"
     }
-    // document.querySelector("#msg").innerText = msg
+
 
 }
 
